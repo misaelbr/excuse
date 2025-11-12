@@ -139,20 +139,22 @@ export default function HomePage() {
         </section>
 
         <section
-          className="mt-12 w-full rounded-xl border-2 border-purple-300/50 bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 p-6 text-center shadow-lg dark:border-purple-500/50 dark:from-slate-800 dark:via-purple-900 dark:to-slate-800 sm:w-3/4 lg:w-1/2"
+          className="mt-12 flex w-full justify-center"
           aria-label="Resultado da desculpa gerada"
         >
-          <p className="mb-4 text-slate-800 dark:text-slate-100">
-            <strong className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text font-bold text-transparent dark:from-purple-400 dark:to-pink-400">
-              Desculpa Completa:
-            </strong>{' '}
-            {desculpaCompleta || 'Vire as cartas para gerar sua desculpa.'}
-          </p>
-          {desculpaCompleta && (
-            <div className="mt-4 flex justify-center">
-              <WhatsAppShare message={desculpaCompleta} />
-            </div>
-          )}
+          <div className="w-full rounded-xl border-2 border-purple-300/50 bg-gradient-to-r from-purple-100 via-pink-100 to-blue-100 p-6 text-center shadow-lg dark:border-purple-500/50 dark:from-slate-800 dark:via-purple-900 dark:to-slate-800 sm:w-3/4 lg:w-1/2">
+            <p className="mb-4 text-slate-800 dark:text-slate-100">
+              <strong className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text font-bold text-transparent dark:from-purple-400 dark:to-pink-400">
+                Desculpa Completa:
+              </strong>{' '}
+              {desculpaCompleta || 'Vire as cartas para gerar sua desculpa.'}
+            </p>
+            {desculpaCompleta && (
+              <div className="mt-4 flex justify-center">
+                <WhatsAppShare message={desculpaCompleta} />
+              </div>
+            )}
+          </div>
         </section>
       </main>
     </div>
