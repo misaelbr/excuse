@@ -92,7 +92,7 @@ export default function HomePage() {
         <h1 className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-3xl font-bold text-transparent md:text-4xl">
           Gere uma desculpa aleatória, e ridícula, para faltar ao trabalho
         </h1>
-        <p className="mt-4 text-sm text-slate-600 dark:text-slate-400">
+        <p className="mt-6 text-base font-medium text-slate-700 drop-shadow-sm dark:text-slate-300 md:text-lg">
           Crie desculpas criativas combinando razões, níveis de gravidade e
           contextos. Compartilhe facilmente no WhatsApp!
         </p>
